@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -17,8 +17,8 @@
     <!-- SEO -->
 	<meta name="name" content="Alexander Kowsik">
     <meta name="author" content="Alexander Kowsik">
-    <meta name="description" content="Alexander Kowsik - Lead Machine Learning Scientist @Predict42">
-    <meta name="keywords" content="Alexander Kowsik, Alex Kowsik, Kowsik, Predict42, TUM, Data Engineering, ML, ML Engineer, Machine Learning, AI, NLP, Deep Learning">
+    <meta name="description" content="Alexander Kowsik - CTO & AI Lead @Predict42">
+    <meta name="keywords" content="Alexander Kowsik, Alex Kowsik, Kowsik, Predict42, CTO, AI Lead, Machine Learning, Data Engineering">
 
 	<script type="application/ld+json">
 		{
@@ -38,10 +38,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/site.webmanifest">
 	
-    <!-- Font Awesome CSS -->
-    <!-- link rel="stylesheet" href="css/font-awesome.min.css" -->
-    <!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 	<!-- Font Awesome JavaScript -->
 	<script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
@@ -56,53 +59,67 @@
 
 <body>
 	<div class="card">
-		<img src="assets/img/profile-picture.jpg" alt="Alexander Kowsik">
-
-		<h1>Alexander Kowsik</h1>
-
-		<p class="city">Munich, Germany</p>
-		
-		<hr class="solid" width="250px" style="opacity: 0.25">
-		
-        <div class="occupations">
-			<p><span style="font-size: 1.08em;">💻</span><br> Lead Machine Learning Scientist <br>@ <a href="https://www.predict42.com" target="_blank">Predict42</a></p>
-            <!-- <p><span style="font-size: 1.08em;">💻</span><br> Data / Machine Learning Engineer <br>@ <a href="https://www.predict42.com" target="_blank">Predict42</a></p> -->
-            <!-- <p><span style="font-size: 1.3em;">🎓</span><br> M.Sc. Data Engineering and Analytics <br>@ <a href="https://www.tum.de" target="_blank">TUM</a></p> -->
-        </div>
-
-		<div class="icon">
-			<a href="https://www.linkedin.com/in/alexander-kowsik/" target="_blank">
-				<i class="fab fa-linkedin"></i>
-			</a>
-		</div>
-		<div class="icon">
-			<a href="https://twitter.com/alexkowsik" target="_blank">
-				<i class="fab fa-twitter"></i>
-			</a>
-		</div>
-		<div class="icon">
-			<a href="https://github.com/alexkowsik" target="_blank">
-				<i class="fab fa-github"></i>
-			</a>
-		</div>
-		<div class="icon">
-			<a href="https://www.kaggle.com/alexanderkowsik" target="_blank">
-				<i class="fab fa-kaggle"></i>
-			</a>
-		</div>
-		<div class="icon">
-			<a href="https://www.goodreads.com/user/show/99495989-alexander-kowsik" target="_blank">
-				<i class="fab fa-goodreads"></i>
-			</a>
+		<div class="card-header">
+			<img src="assets/img/profile-picture.jpg" alt="Alexander Kowsik" class="profile-image">
+			<h1>Alexander Kowsik</h1>
+			<p class="location">Mainz, Germany</p>
 		</div>
 
-		<!-- Email -->
-		<div class="icon">
-			<a id="contact" href="">
-				<i class="fa fa-envelope"></i>
-			</a>
+		<div class="card-body">
+			<div class="roles">
+				<div class="role-item">
+					<div class="role-icon">💻</div>
+					<div class="role-content">
+						<h2>CTO & AI Lead</h2>
+						<p class="company">@ <a href="https://www.predict42.com" target="_blank">Predict42</a></p>
+					</div>
+				</div>
+				
+				<div class="role-item">
+					<div class="role-icon">🎓</div>
+					<div class="role-content">
+						<h2>M.Sc. Data Engineering and Analytics</h2>
+						<p class="company">@ <a href="https://www.tum.de" target="_blank">Technical University of Munich</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/alexander-kowsik/" target="_blank" class="social-link" aria-label="LinkedIn">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a href="https://github.com/alexkowsik" target="_blank" class="social-link" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://twitter.com/alexkowsik" target="_blank" class="social-link" aria-label="Twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://www.kaggle.com/alexanderkowsik" target="_blank" class="social-link" aria-label="Kaggle">
+					<i class="fab fa-kaggle"></i>
+				</a>
+				<a href="https://www.goodreads.com/user/show/99495989-alexander-kowsik" target="_blank" class="social-link" aria-label="Goodreads">
+					<i class="fab fa-goodreads"></i>
+				</a>
+				<a id="contact" href="" class="social-link" aria-label="Email">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
 		</div>
 	</div>
+
+	<script>
+		// Simple fade-in animation for social links
+		const socialLinks = document.querySelectorAll('.social-link');
+		socialLinks.forEach((link, index) => {
+			link.style.opacity = '0';
+			link.style.transform = 'translateY(10px)';
+			setTimeout(() => {
+				link.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+				link.style.opacity = '1';
+				link.style.transform = 'translateY(0)';
+			}, 600 + (index * 50));
+		});
+	</script>
 </body>
 
 </html>
